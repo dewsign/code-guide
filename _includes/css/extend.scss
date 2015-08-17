@@ -1,0 +1,17 @@
+// Bad example
+.base-element {
+    margin: 0 auto;
+    background-color: #cdcdcd;
+}
+.element {
+    @extend .base-element;
+}
+
+// Good example
+%base-element {
+    margin: 0 auto;
+    background-color: #cdcdcd;
+}
+.element {
+    @extend %base-element;
+}

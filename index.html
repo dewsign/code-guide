@@ -32,8 +32,9 @@ layout: default
             <li><a href="#css-prefixed-properties">Prefixed properties</a></li>
             <li><a href="#css-single-declarations">Rules with single declarations</a></li>
             <li><a href="#css-shorthand">Shorthand notation</a></li>
-            <li><a href="#css-nesting">Nesting in Less and Sass</a></li>
-            <li><a href="#css-operators">Operators in Less and Sass</a></li>
+            <li><a href="#css-nesting">Nesting in Sass</a></li>
+            <li><a href="#css-extend">@extend in Sass</a></li>
+            <li><a href="#css-operators">Operators and Sass</a></li>
             <li><a href="#css-comments">Comments</a></li>
             <li><a href="#css-classes">Classes</a></li>
             <li><a href="#css-selectors">Selectors</a></li>
@@ -319,7 +320,7 @@ layout: default
 
 <div class="section" id="css-nesting">
     <div class="col">
-        <h3>Nesting in Less and Sass</h3>
+        <h3>Nesting in Sass</h3>
         <p>Avoid unnecessary nesting. Just because you can nest, doesn't mean you always should. Consider nesting only if you must scope styles to a parent and if there are multiple elements to be nested.</p>
         <p>Additional reading:</p>
         <ul>
@@ -331,9 +332,20 @@ layout: default
     </div>
 </div>
 
+<div class="section" id="css-extend">
+    <div class="col">
+        <h3>@extend Sass</h3>
+        <p>Use of @extend should be limited to SASS placeholders only, to avoid code bloat.</p>
+        <p>For more information see <a href="http://thesassway.com/intermediate/understanding-placeholder-selectors">this article</a>.</p>
+    </div>
+    <div class="col">
+        {% highlight scss %}{% include css/extend.scss %}{% endhighlight %}
+    </div>
+</div>
+
 <div class="section" id="css-operators">
     <div class="col">
-        <h3>Operators in Less and Sass</h3>
+        <h3>Operators in Sass</h3>
         <p>For improved readability, wrap all math operations in parentheses with a single space between values, variables, and operators.</p>
     </div>
     <div class="col">
