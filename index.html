@@ -256,7 +256,7 @@ layout: default
         <p>Compared to <code>&lt;link&gt;</code>s, <code>@import</code> is slower, adds extra page requests, and can cause other unforeseen problems. Avoid them and instead opt for an alternate approach:</p>
         <ul>
             <li>Use multiple <code>&lt;link&gt;</code> elements</li>
-            <li>Compile your CSS with a preprocessor like Sass or Less into a single file</li>
+            <li>Compile your CSS with a preprocessor like Sass into a single file</li>
             <li>Concatenate your CSS files with features provided in Rails, Jekyll, and other environments</li>
         </ul>
         <p>For more information, <a href="http://www.stevesouders.com/blog/2009/04/09/dont-use-import/">read this article by Steve Souders</a>.</p>
@@ -324,7 +324,7 @@ layout: default
         <p>Avoid unnecessary nesting. Just because you can nest, doesn't mean you always should. Consider nesting only if you must scope styles to a parent and if there are multiple elements to be nested.</p>
         <p>Additional reading:</p>
         <ul>
-        <li><a href="http://markdotto.com/2015/07/20/css-nesting/">Nesting in Sass and Less</a></li>
+        <li><a href="http://markdotto.com/2015/07/20/css-nesting/">Nesting in Sass</a></li>
         </ul>
     </div>
     <div class="col">
@@ -375,7 +375,7 @@ layout: default
             <li>Prefix classes based on the closest parent or base class.</li>
             <li>Use <code>.js-*</code> classes to denote behavior (as opposed to style), but keep these classes out of your CSS.</li>
         </ul>
-        <p>It's also useful to apply many of these same rules when creating Sass and Less variable names.</p>
+        <p>It's also useful to apply many of these same rules when creating Sass variable names.</p>
     </div>
     <div class="col">
         {% highlight css %}{% include css/class-names.css %}{% endhighlight %}
